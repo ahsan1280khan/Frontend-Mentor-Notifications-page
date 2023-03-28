@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(205deg, 33%, 90%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body {
+  background-color: hsl(210deg, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 0px;
+}
+
+.notiContainer {
+  width: min(730px, 90%);
+  height: auto;
+  max-height: 100%;
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.02);
+  padding: 0px 30px 20px 30px;
+  overflow: auto;
+}
+
+.notiheader {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notiheader h1 {
+  font-size: 18px;
+}
+
+#counter {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0.1em 0.6em;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(219deg, 97%, 29%);
+  margin-left: 10px;
+}
+
+#markall {
+  font-size: 14px;
+  margin-left: auto;
+  cursor: pointer;
+}
+#markall:hover {
+  color: hsl(219deg, 97%, 29%);
+}
+
+.notifiBody {
+  width: 100%;
+}
+
+.notification {
+  min-height: 80px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  padding: 18px;
+}
+
+.active {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.notiimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.notiimg img {
+  height: 100%;
+  width: 100%;
+}
+
+.notidetails {
+  width: 90%;
+  font-size: 16px;
+  color: hsl(219deg, 12%, 42%);
+  line-height: 1.7;
+}
+.notidetails .name {
+  font-weight: 900;
+  color: hsl(224deg, 21%, 14%);
+  cursor: pointer;
+}
+.notidetails .name:hover {
+  color: hsl(219deg, 97%, 29%);
+}
+.notidetails .group {
+  font-weight: 900;
+  cursor: pointer;
+}
+.notidetails .group:hover {
+  color: hsl(219deg, 97%, 29%);
+}
+.notidetails p {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.privatemassage {
+  font-size: 16px;
+  padding: 20px;
+  border: 1px solid hsl(211deg, 68%, 94%);
+  margin-top: 15px;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+}
+.privatemassage:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+
+.dot {
+  position: relative;
+}
+.dot::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+  right: -15px;
+  top: 40%;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding: 20px 0px;
+  }
+  .notiContainer {
+    width: min(730px, 95%);
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: hsl(0deg, 0%, 100%);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.02);
+    padding: 0px 15px 10px 15px;
+    overflow: auto;
+  }
+  .notiheader {
+    height: 50px;
+  }
+  .notiheader h1 {
+    font-size: 16px;
+  }
+  #counter {
+    font-size: 12px;
+  }
+  #markall {
+    font-size: 12px;
+  }
+  .notiimg {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .notification {
+    min-height: 70px;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    padding: 10px;
+  }
+  .notidetails {
+    width: 90%;
+    font-size: 13px;
+    color: hsl(219deg, 12%, 42%);
+    line-height: 1.7;
+  }
+  .privatemassage {
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid hsl(211deg, 68%, 94%);
+    margin-top: 10px;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+  }
+  .privatemassage:hover {
+    background-color: hsl(205deg, 33%, 90%);
+  }
+}/*# sourceMappingURL=style.css.map */
